@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: Mistral-7B-Instruct-v0.2
+  title: "Mistral-7B-Instruct-v0.2 LLM"
+  description: "Mistral-7B-Instruct-v0.2 LLM"
+  tags:
+    - llm
+    - mistral
+spec:
+  type: llm
+  owner: ai-team
+  lifecycle: production
