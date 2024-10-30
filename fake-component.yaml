@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "my-ai-app"     # set value defined in the (scaffolding/golden path) template
+                                    # dump is a filter:
+                                    # https://backstage.io/docs/features/software-templates/builtin-actions/
+                                    # https://backstage.io/docs/features/software-templates/writing-templates/#built-in-filters
+  title: "My Modern Ai App for OpenShift Commons 2024"
+  annotations:
+    argocd/app-selector: rht-gitops.com/demo-project=simple-hello-world-service-a
+    argocd/instance-name: argoInstance1 # as defined in app-config-rhdh.yaml
+    # https://docs.redhat.com/en/documentation/red_hat_developer_hub/1.2/html/configuring_plugins_in_red_hat_developer_hub/rhdh-installing-dynamic-plugins#installing-tekton-plugin
+    #janus-idp.io/tekton: dev-hub-test-demo
+#    jenkins.io/job-full-name: <jenkins-instance-name-from-rhdh-config>:<team>/artistLookup-build<job-name>
+#    https://jenkins.example.com/job/teamA/job/artistLookup-build becomes <jenkins-instance-name>/teamA/artistLookup-build
+    #jenkins.io/job-full-name: default-jenkins:demo-project/demo-project-demo-app-pipeline
+#    !!! The Red Hat OpenShift Dev Spaces instance is not accessible using the source code editor if the backstage.io/kubernetes-namespace annotation is added to the catalog-info.yaml file.
+    # https://www.npmjs.com/package/@janus-idp/backstage-plugin-topology 
+    backstage.io/kubernetes-namespace: demo-project 
+    backstage.io/kubernetes-id: dev-hub-test-demo
+    
+spec:
+  type: service
+  lifecycle: development
+  owner: "group:default/platform_engineers"     # set value defined in the (scaffolding/golden path) template
+                                      # dump is a filter:
+                                      # https://backstage.io/docs/features/software-templates/builtin-actions/
+                                      # https://backstage.io/docs/features/software-templates/writing-templates/#built-in-filters
