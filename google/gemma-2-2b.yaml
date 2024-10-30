@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: gemma-2-2b
+  title: "Google gemma-2-2b"
+  description: "google/gemma-2-2b"
+  tags:
+    - llm
+    - google
+    - gemma-2-2b
+spec:
+  type: llm
+  owner: ai_team
+  lifecycle: production
