@@ -9,5 +9,5 @@ metadata:
     - mistral
 spec:
   type: llm
-  owner: ai-team
+  owner: ai_team
   lifecycle: production
