@@ -1,0 +1,12 @@
+        - name: dynamic-plugins-root
+          ephemeral:
+            volumeClaimTemplate:
+              metadata:
+                creationTimestamp: null
+              spec:
+                accessModes:
+                  - ReadWriteOnce
+                resources:
+                  requests:
+                    storage: 2Gi
+                volumeMode: Filesystem
