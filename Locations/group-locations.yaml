@@ -4,6 +4,6 @@ metadata:
   name: example-group
 spec:
   type: url
-  target: https://raw.githubusercontent.com/OpenShiftCommons2024/rhdh-resources/main/Groups/platform-engineers.yaml
+  target: https://raw.githubusercontent.com/OpenShiftCommons2024/rhdh-resources/refs/heads/main/Groups/platform-engieneers.yaml
   allowedKinds:
     - Group
