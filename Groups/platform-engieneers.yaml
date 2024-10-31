@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: platform-engineers
+  title: Platform Engineering Group
+  description: A group containing user1 and user2 - The Platform Engineers
+spec:
+  type: team
+  children: []
+  ancestors: []
+  members:
+    - user:default/user1
+    - user:default/user2
