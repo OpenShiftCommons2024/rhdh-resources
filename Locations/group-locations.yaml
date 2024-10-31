@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: rhdh-groups
+  description: "Location for RHDH group YAML files"
+spec:
+  type: url
+  target: https://github.com/OpenShiftCommons2024/rhdh-resources/blob/main/Groups
+  allowedKinds:
+    - Group
+    - User
