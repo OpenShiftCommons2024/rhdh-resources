@@ -1,9 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: example-group
+  name: group-locations
+  description: "Location for group YAML files"
 spec:
   type: url
-  target: https://raw.githubusercontent.com/OpenShiftCommons2024/rhdh-resources/refs/heads/main/Groups/platform-engieneers.yaml
+  target: https://raw.githubusercontent.com/OpenShiftCommons2024/rhdh-resources/refs/heads/main/Groups/
   allowedKinds:
     - Group
+    - User
